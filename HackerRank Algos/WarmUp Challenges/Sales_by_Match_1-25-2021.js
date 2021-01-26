@@ -36,6 +36,7 @@ function sockMerchant(arr) {
     if (matched.length > 0) {
       for (m = 0; m < matched.length - 1; m++) {
         if (arr[i] == matched[m]) {
+          console.log(arr[m]);
           //skip inner forloop and increment i
           continue;
         }
@@ -50,6 +51,7 @@ function sockMerchant(arr) {
       }
     }
     matched.push(arr[i]);
+    console.log(matched);
     var numOfMatched = numOfMatching / 2;
     Math.floor(numOfMatched);
     console.log('Matched:', numOfMatched);
