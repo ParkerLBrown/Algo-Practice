@@ -54,26 +54,27 @@
 
 function jumpingOnClouds(c) {
   var numOfJumps=0;
-  for (i = 0; i <= c.length - 1; i++) {
+  var i = 0;
+  while (i < c.length - 1) {
     console.log('current cloud:\n', 'position:', i, 'cloud type:', c[i]);
     if (c[i + 1] == 1) {
       console.log('This is a Thunder Cloud', c[i + 1]);
-      i++;
       console.log('jumping over thunder cloud positioned at:', i);
+      i += 2;
       numOfJumps++;
       console.log('number of jumps:', numOfJumps);
     }
     else if (c[i + 1] == 0) {
       if (c[i + 2] == 0) {
-        i++;
-        console.log(i);
-        numOfJumps++;
         console.log('Log jump over cumulus positioned at:', i);
+        i += 2;
+        numOfJumps++;
         console.log('number of jumps:', numOfJumps);
       }
       else if (c[i + 2] == 1) {
+        console.log('Cannot Long jump onto Thundercloud, small jump to cumulus at:', i+1);
+        i++;
         numOfJumps++;
-        console.log('Cannot Long jump onto Thundercloud, small jump to cumulus positioned at:', i+1);
         console.log('number of jumps:', numOfJumps);
       }
     }
