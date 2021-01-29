@@ -33,7 +33,7 @@ function sockMerchant(arr) {
   var numOfMatching = 0;
   var matched = [];
   for (i = 0; i < arr.length - 1; i++) {
-    if (matched.length > 0) {
+    if (matched.length > 0) { // trying to skip second forloop and code if the number in array as already gone through matching
       for (m = 0; m < matched.length - 1; m++) {
         if (arr[i] == matched[m]) {
           console.log(arr[m]);
