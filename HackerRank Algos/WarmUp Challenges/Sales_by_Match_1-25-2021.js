@@ -61,3 +61,5 @@ function sockMerchant(arr) {
   return(pairs);
 
 }
+
+//This is the Algo i need help with
