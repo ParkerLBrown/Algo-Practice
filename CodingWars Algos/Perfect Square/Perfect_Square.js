@@ -1,15 +1,10 @@
 // https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/javascript
 
-function isPerfectSquare (num) {
-  var i = 0;
-  while (i <= num) {
-    if (i * i !== num ) {
-      i++;
-      continue;
+function perfectSquares(num) {
+  for (var i = 0; i * i <= num; i++) {
+    if (i * i === num) {
+      return true
     }
-    if (i * i == num) {
-      return true;
-    }
-  }
-  return false;
+  } 
+  return false
 }
