@@ -82,3 +82,7 @@ function jumpingOnClouds(c) {
   console.log('min number of jumps required to win:', numOfJumps);
   return(numOfJumps);
 }
+
+//Merged Branch to create two different pull Requests.
+//Code updated to while loop.
+//What would you do differently for order of if statements?
